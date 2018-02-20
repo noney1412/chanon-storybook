@@ -16,6 +16,8 @@
 	},
 	"devDependencies": {
 		"@storybook/addon-actions": "^3.3.13",
+		"@storybook/addon-backgrounds": "^3.3.13",
+		"@storybook/addon-info": "^3.3.13",
 		"@storybook/addon-knobs": "^3.3.13",
 		"@storybook/addon-links": "^3.3.13",
 		"@storybook/addon-options": "^3.3.13",
