@@ -6,7 +6,7 @@ import { linkTo } from "@storybook/addon-links";
 
 import { Button, Welcome } from "@storybook/react/demo";
 
-import Nav from "../components/nav";
+import { Card } from "../components/Card";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
 	<Welcome showApp={linkTo("Button")} />
@@ -19,4 +19,18 @@ storiesOf("Button", module)
 	.add("with some emoji", () => (
 		<Button onClick={action("clicked")}>😀 😎 👍 💯</Button>
 	))
-	.add("navbar", () => <Nav />);
+	.add("My Card", () => (
+		<Card>
+			<img
+				src="/50087.jpg"
+				alt="Avatar"
+				style={{ width: "100%", height: "500px" }}
+			/>
+			<div>
+				<h4>
+					<b>Chanon Panpila</b>
+				</h4>
+				<p>Computer Engineer</p>
+			</div>
+		</Card>
+	));

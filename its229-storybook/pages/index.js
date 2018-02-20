@@ -1,3 +1,3 @@
-export default () => (
-    <div>Its 229 : storybook Demo</div>
-)
+import Card from "../components/Card";
+
+export default () => <Card />;
