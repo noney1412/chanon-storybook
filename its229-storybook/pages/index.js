@@ -10,18 +10,15 @@ export default () => (
 			<img
 				src="/static/50087.jpg"
 				alt="Avatar"
-				style={{ width: "100%", height: "500px" }}
+				style={{ width: "100%", height: "200px" }}
 			/>
 			<div>
-				<h4>
-					<b>Chanon Panpila</b>
-				</h4>
-				<ul>
-					<p>📧 nonpanpila@gmail.com </p>
-					<p>💻 Computer Engineering </p>
-				</ul>
+				<h3>
+					<b>Your Name</b>
+				</h3>
+				<p>📧 nonpanpila@gmail.com </p>
+				<p>💻 Computer Engineering </p>
 			</div>
 		</Card>
-	
 	</div>
 );
