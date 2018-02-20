@@ -1,36 +1,62 @@
 import React from "react";
+import styled from "styled-components";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
+import {
+	withKnobs,
+	text,
+	boolean,
+	number,
+	object,
+	select,
+	color
+} from "@storybook/addon-knobs";
 
-import { Button, Welcome } from "@storybook/react/demo";
+import { Card } from "./demo";
 
-import { Card } from "../components/Card";
+const stories = storiesOf("💳 MY Card", module);
 
-storiesOf("Welcome", module).add("to Storybook", () => (
-	<Welcome showApp={linkTo("Button")} />
-));
+stories.addDecorator(withKnobs);
 
-storiesOf("Button", module)
-	.add("with text", () => (
-		<Button onClick={action("clicked")}>Hello Button</Button>
-	))
-	.add("with some emoji", () => (
-		<Button onClick={action("clicked")}>😀 😎 👍 💯</Button>
-	))
-	.add("My Card", () => (
-		<Card>
+stories.add("👤 Profile", () => {
+	const options = {
+		range: true,
+		min: 10,
+		max: 42,
+		step: 0.5
+	};
+
+	const colorOPt = {
+		Red: "red",
+		Blue: "blue",
+		Yellow: "yellow",
+		Rainbow: ["red", "orange", "etc"],
+		None: null
+	};
+	const groupId = "GROUP-ID1";
+	const groupId2 = "GROUP-ID2";
+
+	const style = {
+		fontSize: number("FontSize", 15, options, groupId),
+		color: color("Color", "black", groupId)
+	};
+
+	return (
+		<Card onClick={action("Clicked")}>
 			<img
 				src="/50087.jpg"
 				alt="Avatar"
-				style={{ width: "100%", height: "500px" }}
+				style={{ width: "100%", height: "200px" }}
 			/>
-			<div>
-				<h4>
+			<div style={object("Style", style)}>
+				<h3>
 					<b>Chanon Panpila</b>
-				</h4>
-				<p>Computer Engineer</p>
+				</h3>
+				<p>📧 nonpanpila@gmail.com </p>
+				<p>💻 Computer Engineering </p>
 			</div>
 		</Card>
-	));
+	);
+});
