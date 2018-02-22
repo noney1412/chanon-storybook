@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import { withInfo } from "../";
 
-export const Card = styled.div`
+export default withInfo(`
+## Component for React
+
+~~~jsx
+export const Card = styled.div\`
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 	width: 300px;
@@ -27,4 +31,7 @@ export const Card = styled.div`
 		color: #e74c3c;
 		font-size: 24px;
 	}
-`;
+\`;
+~~~
+
+`);

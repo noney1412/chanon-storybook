@@ -1,7 +1,6 @@
-import { stories, withInfo } from "./";
+import { stories, withInfo } from "../";
 import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
-import { Card } from "./demo";
+import { Card } from "./_styled";
 
 import {
 	withKnobs,

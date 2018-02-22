@@ -1,9 +1,7 @@
-
 import { storiesOf, addDecorator } from "@storybook/react";
 import { withInfo, setDefaults } from "@storybook/addon-info";
-import backgrounds from "@storybook/addon-backgrounds";
-
 import { withKnobs } from "@storybook/addon-knobs";
+import backgrounds from "@storybook/addon-backgrounds";
 
 const stories = storiesOf("💳 MY Card", module);
 
