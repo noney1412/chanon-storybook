@@ -24,7 +24,7 @@ const stories = storiesOf("💳 MY Card", module);
 
 setDefaults({
 	header: false,
-	inline: true,
+	inline: true
 });
 
 const Backgrounds = backgrounds([
@@ -42,7 +42,7 @@ stories.add(
 
 ~~~js
 <Card>
-	<img src="/static/50087.jpg"
+	<img src="/static/img/50087.jpg"
 	alt="Avatar"
 	style={{ width: "100%", height: "200px" }}
 	/>
@@ -72,9 +72,9 @@ stories.add(
 		};
 
 		return (
-			<Card onClick={action("Clicked")} style={{ margin: "13px" }}>
+			<Card onClick={action("Clicked")} style={{ margin: "10px auto" }}>
 				<img
-					src="/50087.jpg"
+					src="/img/50087.jpg"
 					alt="Avatar"
 					style={{ width: "100%", height: "200px" }}
 				/>

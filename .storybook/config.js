@@ -1,7 +1,6 @@
 import { configure } from "@storybook/react";
 import { setOptions } from "@storybook/addon-options";
 
-// automatically import all files ending in *.stories.js
 const req = require.context("../stories", true, /.stories.js$/);
 
 function loadStories() {
@@ -11,7 +10,8 @@ function loadStories() {
 setOptions({
 	name: "Chanon Panpila",
 	url: "https://github.com/noney1412/chanon-storybook",
-	addonPanelInRight: true
+	addonPanelInRight: true,
+	sidebarAnimations: false
 });
 
 configure(loadStories, module);

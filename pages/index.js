@@ -8,7 +8,7 @@ export default () => (
 
 		<Card>
 			<img
-				src="/static/50087.jpg"
+				src="/static/img/50087.jpg"
 				alt="Avatar"
 				style={{ width: "100%", height: "200px" }}
 			/>
