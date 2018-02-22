@@ -6,7 +6,7 @@
 		"build": "next build",
 		"start": "next start",
 		"storybook": "start-storybook -s ./static -p 6006",
-		"build-storybook": "build-storybook"
+		"build-storybook": "build-storybook -s ./static -c .storybook -o .out"
 	},
 	"dependencies": {
 		"next": "^5.0.0",
