@@ -1,11 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-
-import backgrounds from "@storybook/addon-backgrounds";
-
-import { storiesOf, addDecorator } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
+import { storiesOf, addDecorator } from "@storybook/react";
+import { withInfo, setDefaults } from "@storybook/addon-info";
+import backgrounds from "@storybook/addon-backgrounds";
+
 import {
 	withKnobs,
 	text,
@@ -15,8 +13,6 @@ import {
 	select,
 	color
 } from "@storybook/addon-knobs";
-
-import { withInfo, setDefaults } from "@storybook/addon-info";
 
 import { Card } from "./demo";
 
@@ -40,18 +36,35 @@ stories.add(
 	withInfo(`
 ## Component for React
 
-~~~js
-<Card>
-	<img src="/static/img/50087.jpg"
-	alt="Avatar"
-	style={{ width: "100%", height: "200px" }}
-	/>
-	<div>
-		<h3><b>Your Name</b></h3>
-		<p>📧 nonpanpila@gmail.com </p>
-		<p>💻 Computer Engineering </p>
-	</div>
-</Card>
+~~~jsx
+export const Card = styled.div\`
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 300px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #fff;
+	
+
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	img {
+		border-radius: 5px 5px 0 0;
+	}
+
+	div {
+		font-family: "proxima-nova-soft", sans-serif;
+		margin: 0;
+		padding: 0 0 20px 20px;
+	}
+
+	h3 {
+		color: #e74c3c;
+		font-size: 24px;
+	}
+\`;
 ~~~
 
 `)(() => {
