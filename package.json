@@ -40,6 +40,7 @@
 	},
 	"jest": {
 		"setupFiles": ["./__TEST__/shim.js", "./__TEST__/jestSetup.js"],
-		"snapshotSerializers": ["enzyme-to-json/serializer"]
+		"snapshotSerializers": ["enzyme-to-json/serializer"],
+		"testPathIgnorePatterns": ["/components/_1"]
 	}
 }

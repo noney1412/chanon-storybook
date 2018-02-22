@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Post component should render the title not as a link 1`] = `
-<div>
-  Layout
-</div>
-`;
