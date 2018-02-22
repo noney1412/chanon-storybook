@@ -24,7 +24,7 @@ const stories = storiesOf("💳 MY Card", module);
 
 setDefaults({
 	header: false,
-	inline: true,
+	inline: true
 });
 
 const Backgrounds = backgrounds([
