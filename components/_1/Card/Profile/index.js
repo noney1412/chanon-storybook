@@ -9,7 +9,7 @@ export default info(() => {
 	const options = {
 		range: true,
 		min: 10,
-		max: 21,
+		max: 42,
 		step: 0.5
 	};
 

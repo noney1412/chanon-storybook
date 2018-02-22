@@ -3,7 +3,7 @@ import { withInfo, setDefaults } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import backgrounds from "@storybook/addon-backgrounds";
 
-const stories = storiesOf("💳 Card", module);
+const stories = storiesOf("💳 MY Card", module);
 
 setDefaults({
 	header: false,
