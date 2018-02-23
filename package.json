@@ -2,11 +2,9 @@
 	"name": "its229-storybook",
 	"license": "MIT",
 	"scripts": {
-		"dev": "next",
-		"build": "next build",
 		"start": "next start",
-		"storybook": "start-storybook -s ./static -p 6006",
-		"build-storybook": "build-storybook -s ./static -c .storybook -o .out"
+		"story": "start-storybook -s ./static -p 6006",
+		"build": "build-storybook -s ./static -c .storybook -o build"
 	},
 	"dependencies": {
 		"next": "^5.0.0",
