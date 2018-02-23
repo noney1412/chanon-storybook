@@ -2,12 +2,12 @@
 	"name": "its229-storybook",
 	"license": "MIT",
 	"version": "0",
+	"repository": "https://github.com/noney1412/chanon-storybook.git",
 	"scripts": {
 		"sty": "stylelint ./stories/**/*.js",
 		"test": "clear & NODE_ENV=test jest",
 		"story": "NODE_ENV=1 start-storybook -s ./static -p 6006",
-		"build":
-			"NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
+		"build": "NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
 	},
 	"dependencies": {
 		"next": "^5.0.0",
