@@ -17,7 +17,7 @@ export const Card = styled.div`
 	}
 
 	div {
-		font-family: "proxima-nova-soft", sans-serif;
+		font-family: proxima-nova-soft, sans-serif;
 		margin: 0;
 		padding: 0 0 20px 20px;
 	}

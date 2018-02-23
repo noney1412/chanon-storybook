@@ -1,4 +1,3 @@
-import { action } from "@storybook/addon-actions";
 import { Card } from "./_styled";
 import info from "./_info";
 import { text, number, object, color } from "@storybook/addon-knobs";
@@ -21,7 +20,7 @@ export default info(() => {
 	};
 
 	return (
-		<Card onClick={action("Clicked")} style={{ margin: "10px auto" }}>
+		<Card style={{ margin: "10px auto" }}>
 			<img
 				src="/img/50087.jpg"
 				alt="Avatar"

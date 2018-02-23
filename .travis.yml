@@ -1,4 +1,5 @@
 cache:
+  yarn: true
   directories:
   - node_modules # cache node_module
 language: node_js # set language to node_js
