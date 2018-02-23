@@ -2,9 +2,17 @@
 	"name": "its229-storybook",
 	"license": "MIT",
 	"scripts": {
+<<<<<<< HEAD
 		"start": "next start",
 		"story": "start-storybook -s ./static -p 6006",
 		"build": "build-storybook -s ./static -c .storybook -o build"
+=======
+		"sty": "stylelint ./stories/**/*.js",
+		"test": "clear & NODE_ENV=test jest",
+		"story": "NODE_ENV=1 start-storybook -s ./static -p 6006",
+		"build-storybook":
+			"NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
+>>>>>>> markdown
 	},
 	"dependencies": {
 		"next": "^5.0.0",
