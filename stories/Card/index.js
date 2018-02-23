@@ -11,8 +11,10 @@ setDefaults({
 });
 
 const Backgrounds = backgrounds([
+	{ name: "lightgrey", value: "#fafafa", default: true },
 	{ name: "dark", value: "#090f0f" },
-	{ name: "default", value: "#ffff", default: true }
+	{ name: "white", value: "#ffff" },
+	{ name: "grey", value: "#ebebeb" }
 ]);
 
 stories.addDecorator(withKnobs);
