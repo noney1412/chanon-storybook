@@ -6,8 +6,7 @@ import backgrounds from "@storybook/addon-backgrounds";
 const stories = storiesOf("💳 Card", module);
 
 setDefaults({
-	header: false,
-	inline: true
+	header: false
 });
 
 const Backgrounds = backgrounds([
@@ -19,6 +18,8 @@ const Backgrounds = backgrounds([
 
 stories.addDecorator(withKnobs);
 stories.addDecorator(Backgrounds);
+stories.addDecorator(story => (
+	<div style={{ marginTop: "20px" }}>{story()}</div>
+));
 
 export { stories, withInfo };
-
