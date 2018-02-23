@@ -6,7 +6,7 @@
 		"sty": "stylelint ./stories/**/*.js",
 		"test": "clear & NODE_ENV=test jest",
 		"story": "NODE_ENV=1 start-storybook -s ./static -p 6006",
-		"build-storybook":
+		"build":
 			"NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
 	},
 	"dependencies": {
