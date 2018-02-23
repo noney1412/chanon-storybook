@@ -7,7 +7,7 @@
 		"test": "clear & NODE_ENV=test jest",
 		"story": "NODE_ENV=1 start-storybook -s ./static -p 6006",
 		"build-storybook":
-			"NODE_ENV=1 build-storybook -s ./static -c .storybook -o .out"
+			"NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
 	},
 	"dependencies": {
 		"next": "^5.0.0",
