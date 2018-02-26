@@ -9,12 +9,14 @@
 		"start": "cd build & python -m SimpleHTTPServer",
 		"dev": "NODE_ENV=1 start-storybook -s ./static -p 6006",
 		"prebuild": "rm -rf build/*",
-		"build": "NODE_ENV=1 build-storybook -s ./static -c .storybook -o build"
+		"build": "NODE_ENV=1 build-storybook -s ./static -c .storybook -o build",
+		"next": "NODE_ENV=1 next"
 	},
 	"dependencies": {
 		"next": "^5.0.0",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
+		"react-live": "^1.9.2",
 		"styled-components": "^3.1.6"
 	},
 	"devDependencies": {
