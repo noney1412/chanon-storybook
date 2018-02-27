@@ -17,7 +17,6 @@ const code = `
 
 const CustomLiveProvider = styled(LiveProvider)`
 	font-size: 2vh;
-	font-family: Consolas;
 `;
 
 export default () => (
